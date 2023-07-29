@@ -1,0 +1,233 @@
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.h:20:8: style:inconclusive: Technically the member function 'AzIoTSasToken::IsExpired' can be const. [functionConst]
+  bool IsExpired();
+       ^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.cpp:269:21: note: Technically the member function 'AzIoTSasToken::IsExpired' can be const.
+bool AzIoTSasToken::IsExpired()
+                    ^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.h:20:8: note: Technically the member function 'AzIoTSasToken::IsExpired' can be const.
+  bool IsExpired();
+       ^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.h:21:11: style:inconclusive: Technically the member function 'AzIoTSasToken::Get' can be const. [functionConst]
+  az_span Get();
+          ^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.cpp:284:24: note: Technically the member function 'AzIoTSasToken::Get' can be const.
+az_span AzIoTSasToken::Get() { return this->sasToken; }
+                       ^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.h:21:11: note: Technically the member function 'AzIoTSasToken::Get' can be const.
+  az_span Get();
+          ^
+sdk/samples/iot/aziot_esp32/SerialLogger.h:17:8: performance:inconclusive: Technically the member function 'SerialLogger::Info' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+  void Info(String message);
+       ^
+sdk/samples/iot/aziot_esp32/SerialLogger.cpp:49:20: note: Technically the member function 'SerialLogger::Info' can be static (but you may consider moving to unnamed namespace).
+void SerialLogger::Info(String message)
+                   ^
+sdk/samples/iot/aziot_esp32/SerialLogger.h:17:8: note: Technically the member function 'SerialLogger::Info' can be static (but you may consider moving to unnamed namespace).
+  void Info(String message);
+       ^
+sdk/samples/iot/aziot_esp32/SerialLogger.h:18:8: performance:inconclusive: Technically the member function 'SerialLogger::Error' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+  void Error(String message);
+       ^
+sdk/samples/iot/aziot_esp32/SerialLogger.cpp:56:20: note: Technically the member function 'SerialLogger::Error' can be static (but you may consider moving to unnamed namespace).
+void SerialLogger::Error(String message)
+                   ^
+sdk/samples/iot/aziot_esp32/SerialLogger.h:18:8: note: Technically the member function 'SerialLogger::Error' can be static (but you may consider moving to unnamed namespace).
+  void Error(String message);
+       ^
+sdk/samples/iot/iot_sample_common.c:327:11: style:inconclusive: Function 'iot_sample_create_mqtt_endpoint' argument 3 names different: declaration 'endpoint' definition 'out_endpoint'. [funcArgNamesDifferent]
+    char* out_endpoint,
+          ^
+sdk/samples/iot/iot_sample_common.h:177:11: note: Function 'iot_sample_create_mqtt_endpoint' argument 3 names different: declaration 'endpoint' definition 'out_endpoint'.
+    char* endpoint,
+          ^
+sdk/samples/iot/iot_sample_common.c:327:11: note: Function 'iot_sample_create_mqtt_endpoint' argument 3 names different: declaration 'endpoint' definition 'out_endpoint'.
+    char* out_endpoint,
+          ^
+sdk/samples/iot/paho_iot_hub_methods_sample.c:301:45: style:inconclusive: Function 'send_method_response' argument 1 names different: declaration 'request' definition 'method_request'. [funcArgNamesDifferent]
+    az_iot_hub_client_method_request const* method_request,
+                                            ^
+sdk/samples/iot/paho_iot_hub_methods_sample.c:56:45: note: Function 'send_method_response' argument 1 names different: declaration 'request' definition 'method_request'.
+    az_iot_hub_client_method_request const* request,
+                                            ^
+sdk/samples/iot/paho_iot_hub_methods_sample.c:301:45: note: Function 'send_method_response' argument 1 names different: declaration 'request' definition 'method_request'.
+    az_iot_hub_client_method_request const* method_request,
+                                            ^
+sdk/samples/iot/paho_iot_pnp_component_sample.c:523:49: style:inconclusive: Function 'handle_device_property_message' argument 2 names different: declaration 'property_response' definition 'property_message'. [funcArgNamesDifferent]
+    az_iot_hub_client_properties_message const* property_message)
+                                                ^
+sdk/samples/iot/paho_iot_pnp_component_sample.c:108:49: note: Function 'handle_device_property_message' argument 2 names different: declaration 'property_response' definition 'property_message'.
+    az_iot_hub_client_properties_message const* property_response);
+                                                ^
+sdk/samples/iot/paho_iot_pnp_component_sample.c:523:49: note: Function 'handle_device_property_message' argument 2 names different: declaration 'property_response' definition 'property_message'.
+    az_iot_hub_client_properties_message const* property_message)
+                                                ^
+sdk/samples/iot/paho_iot_pnp_component_sample.c:563:24: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+  az_iot_status status = AZ_IOT_STATUS_UNKNOWN;
+                       ^
+sdk/samples/iot/paho_iot_pnp_with_provisioning_sample.c:439:57: style:inconclusive: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'. [funcArgNamesDifferent]
+    az_iot_provisioning_client_register_response const* register_response)
+                                                        ^
+sdk/samples/iot/paho_iot_pnp_with_provisioning_sample.c:78:57: note: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'.
+    az_iot_provisioning_client_register_response const* response);
+                                                        ^
+sdk/samples/iot/paho_iot_pnp_with_provisioning_sample.c:439:57: note: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'.
+    az_iot_provisioning_client_register_response const* register_response)
+                                                        ^
+sdk/samples/iot/paho_iot_provisioning_sample.c:351:57: style:inconclusive: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'. [funcArgNamesDifferent]
+    az_iot_provisioning_client_register_response const* register_response)
+                                                        ^
+sdk/samples/iot/paho_iot_provisioning_sample.c:53:57: note: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'.
+    az_iot_provisioning_client_register_response const* response);
+                                                        ^
+sdk/samples/iot/paho_iot_provisioning_sample.c:351:57: note: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'.
+    az_iot_provisioning_client_register_response const* register_response)
+                                                        ^
+sdk/samples/iot/paho_iot_provisioning_sas_sample.c:355:57: style:inconclusive: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'. [funcArgNamesDifferent]
+    az_iot_provisioning_client_register_response const* register_response)
+                                                        ^
+sdk/samples/iot/paho_iot_provisioning_sas_sample.c:58:57: note: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'.
+    az_iot_provisioning_client_register_response const* response);
+                                                        ^
+sdk/samples/iot/paho_iot_provisioning_sas_sample.c:355:57: note: Function 'send_operation_query_message' argument 1 names different: declaration 'response' definition 'register_response'.
+    az_iot_provisioning_client_register_response const* register_response)
+                                                        ^
+sdk/samples/iot/pnp/pnp_protocol.c:130:11: style:inconclusive: Function 'pnp_telemetry_get_publish_topic' argument 4 names different: declaration 'mqtt_topic' definition 'out_mqtt_topic'. [funcArgNamesDifferent]
+    char* out_mqtt_topic,
+          ^
+sdk/samples/iot/pnp/pnp_protocol.h:56:11: note: Function 'pnp_telemetry_get_publish_topic' argument 4 names different: declaration 'mqtt_topic' definition 'out_mqtt_topic'.
+    char* mqtt_topic,
+          ^
+sdk/samples/iot/pnp/pnp_protocol.c:130:11: note: Function 'pnp_telemetry_get_publish_topic' argument 4 names different: declaration 'mqtt_topic' definition 'out_mqtt_topic'.
+    char* out_mqtt_topic,
+          ^
+sdk/samples/iot/vxworks/azureClientSample.c:1044:5: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+    mqttClient = NULL;
+    ^
+sdk/samples/iot/vxworks/azureProvisioningClientSample.c:734:5: warning: Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg]
+    mqttClient = NULL;
+    ^
+sdk/src/azure/core/az_base64.c:84:18: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  int32_t result = 0;
+                 ^
+sdk/src/azure/core/az_base64.c:99:18: style: Variable 'source_index' is assigned a value that is never used. [unreadVariable]
+    source_index += 1;
+                 ^
+sdk/src/azure/core/az_base64.c:106:18: style: Variable 'source_index' is assigned a value that is never used. [unreadVariable]
+    source_index += 2;
+                 ^
+sdk/src/azure/core/az_http_policy_retry.c:171:20: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  az_result result = AZ_OK;
+                   ^
+sdk/src/azure/core/az_span.c:33:72: warning: Comparison is wrong. Result of 'ptr+(uint32_t)size' can't be 0 unless there is pointer overflow, and pointer overflow is undefined behaviour. [pointerAdditionResultNotNull]
+  _az_PRECONDITION((ptr != NULL && size >= 0) || (ptr + (uint32_t)size == 0));
+                                                                       ^
+sdk/src/azure/iot/az_iot_adu_client.c:167:11: style: The scope of the variable 'step_id_scratch_buffer' can be reduced. [variableScope]
+  uint8_t step_id_scratch_buffer[7];
+          ^
+sdk/tests/core/test_az_context.c:39:14: style: Redundant initialization for 'expiration'. The initialized value is overwritten before it is read. [redundantInitialization]
+  expiration = az_context_get_expiration(&ctx3); // Should be 0
+             ^
+sdk/tests/core/test_az_context.c:26:22: note: expiration is initialized
+  int64_t expiration = az_context_get_expiration(&ctx3);
+                     ^
+sdk/tests/core/test_az_context.c:39:14: note: expiration is overwritten
+  expiration = az_context_get_expiration(&ctx3); // Should be 0
+             ^
+sdk/tests/core/test_az_json.c:2446:19: style: Variable 'actual_d' is assigned a value that is never used. [unreadVariable]
+  double actual_d = 0;
+                  ^
+sdk/tests/core/test_az_json.c:2447:29: style: Variable 'json_number' is assigned a value that is never used. [unreadVariable]
+  az_json_token json_number = reader.token;
+                            ^
+sdk/tests/core/test_az_json.c:2448:29: style: Variable 'json_nested_array' is assigned a value that is never used. [unreadVariable]
+  az_span json_nested_array = { 0 };
+                            ^
+sdk/tests/core/test_az_json.c:2449:23: style: Variable 'json_object' is assigned a value that is never used. [unreadVariable]
+  az_span json_object = { 0 };
+                      ^
+sdk/tests/core/test_az_json.c:2450:21: style: Variable 'remainder' is assigned a value that is never used. [unreadVariable]
+  az_span remainder = { 0 };
+                    ^
+sdk/tests/core/test_az_json.c:2973:21: style: Variable 'property_value[0]' is assigned a value that is never used. [unreadVariable]
+  property_value[0] = 0;
+                    ^
+sdk/tests/core/test_az_policy.c:22:1: error: There is an unknown macro here somewhere. Configuration is required. If ENABLE_PRECONDITION_CHECK_TESTS is a macro then please configure it. [unknownMacro]
+ENABLE_PRECONDITION_CHECK_TESTS()
+^
+sdk/tests/iot/provisioning/test_az_iot_provisioning_client_register_get_request_payload.c:51:30: style: Variable 'ASSERT_PRECONDITION_CHECKED' is assigned a value that is never used. [unreadVariable]
+  ASSERT_PRECONDITION_CHECKED(az_iot_provisioning_client_get_request_payload(
+                             ^
+sdk/tests/iot/provisioning/test_az_iot_provisioning_client_register_get_request_payload.c:71:30: style: Variable 'ASSERT_PRECONDITION_CHECKED' is assigned a value that is never used. [unreadVariable]
+  ASSERT_PRECONDITION_CHECKED(az_iot_provisioning_client_get_request_payload(
+                             ^
+sdk/tests/iot/provisioning/test_az_iot_provisioning_client_register_get_request_payload.c:95:30: style: Variable 'ASSERT_PRECONDITION_CHECKED' is assigned a value that is never used. [unreadVariable]
+  ASSERT_PRECONDITION_CHECKED(az_iot_provisioning_client_get_request_payload(
+                             ^
+sdk/tests/iot/provisioning/test_az_iot_provisioning_client_register_get_request_payload.c:115:30: style: Variable 'ASSERT_PRECONDITION_CHECKED' is assigned a value that is never used. [unreadVariable]
+  ASSERT_PRECONDITION_CHECKED(az_iot_provisioning_client_get_request_payload(
+                             ^
+sdk/tests/iot/provisioning/test_az_iot_provisioning_client_register_get_request_payload.c:134:30: style: Variable 'ASSERT_PRECONDITION_CHECKED' is assigned a value that is never used. [unreadVariable]
+  ASSERT_PRECONDITION_CHECKED(az_iot_provisioning_client_get_request_payload(
+                             ^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.cpp:238:0: style: The function 'Generate' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.cpp:284:0: style: The function 'Get' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/aziot_esp32/SerialLogger.cpp:49:0: style: The function 'Info' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/aziot_esp32/AzIoTSasToken.cpp:269:0: style: The function 'IsExpired' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_http_policy_retry.c:20:0: style: The function '_az_http_policy_retry_options_default' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_log.c:60:0: style: The function '_az_log_should_write' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_log.c:66:0: style: The function '_az_log_write' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_base64.c:360:0: style: The function 'az_base64_url_get_max_decoded_size' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_http_policy.c:97:0: style: The function 'az_http_pipeline_policy_credential' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_http_policy_logging.c:237:0: style: The function 'az_http_pipeline_policy_logging' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_http_policy_retry.c:153:0: style: The function 'az_http_pipeline_policy_retry' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_http_policy.c:115:0: style: The function 'az_http_pipeline_policy_transport' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_precondition.c:24:0: style: The function 'az_precondition_failed_get_callback' is never used. [unusedFunction]
+
+^
+sdk/src/azure/core/az_precondition.c:19:0: style: The function 'az_precondition_failed_set_callback' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/pnp/pnp_protocol.c:183:0: style: The function 'pnp_build_reported_property' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/pnp/pnp_protocol.c:223:0: style: The function 'pnp_build_reported_property_with_status' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/pnp/pnp_protocol.c:287:0: style: The function 'pnp_build_telemetry_message' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/pnp/pnp_protocol.c:164:0: style: The function 'pnp_parse_command_name' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/pnp/pnp_protocol.c:306:0: style: The function 'pnp_process_device_twin_message' is never used. [unusedFunction]
+
+^
+sdk/samples/iot/pnp/pnp_protocol.c:126:0: style: The function 'pnp_telemetry_get_publish_topic' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
